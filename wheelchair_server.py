@@ -49,7 +49,8 @@ class curbie_prompt(Resource):
 
         usr_quest = args["query"]
         
-        result = f"received query: '{usr_quest}'" # wheelchair_ai.run_generic_query(usr_quest)
+        # result = f"received query: '{usr_quest}'" 
+        result = wheelchair_ai.run_generic_query(usr_quest)
         print(result)
         return result
     

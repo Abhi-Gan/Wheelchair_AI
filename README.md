@@ -23,3 +23,5 @@ EX:
 
 
 **top_reddit_posts**: GET request, optional param n default = 10
+http://127.0.0.1:5000/top_reddit_posts
+Results are a list of dictionaries {"submission":"<reddit post title>", "url":"link to post"}

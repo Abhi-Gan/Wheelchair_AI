@@ -1,5 +1,5 @@
 # Wheelchair_AI
-chat server for questions about wheelchair
+Chat server for questions about wheelchair. Custom fine tuned using ~200 Reddit posts + their comments 
 
 Run the server with the following command:
 `python3 wheelchair_server.py`

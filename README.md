@@ -21,6 +21,9 @@ EX:
 }
 ```
 
+response:
+
+" A good wheelchair for trails outdoors is one that is designed for off-road use. Look for wheelchairs with large, knobby tires, a low center of gravity, and a suspension system to help absorb bumps and shocks. You may also want to consider a wheelchair with adjustable seat height and backrest angle, as well as adjustable armrests and footrests."
 
 **top_reddit_posts**: GET request, optional param n default = 10
 

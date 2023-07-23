@@ -1,6 +1,10 @@
 # Wheelchair_AI
 Chat server for questions about wheelchair. Custom fine tuned using ~200 Reddit posts + their comments 
 
+
+For full functionality you need a .env file with OPENAI_API_KEY and REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET
+
+
 Run the server with the following command:
 `python3 wheelchair_server.py`
 The server should then run on http://127.0.0.1:5000. You'll be able to see this on the terminal.

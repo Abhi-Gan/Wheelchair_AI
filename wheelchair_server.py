@@ -42,22 +42,28 @@ class QuickMaths(Resource):
         return a*b
 
 # responds to arcade prompt
-class curby_prompt(Resource):
+class curbie_prompt(Resource):
     def post(self):
         args = request.get_json()
         print(f"args = {args}")
 
         usr_quest = args["query"]
         
-        result = f"received query {usr_quest}" # wheelchair_ai.run_generic_query(usr_quest)
+        result = f"received query: '{usr_quest}'" # wheelchair_ai.run_generic_query(usr_quest)
         print(result)
-        return result['result']
-
+        return result
+    
+# gets top 10 reddit posts
+class top_reddit_posts(Resource):
+    def get(self):
+        n = request.args.get('n', default=10)
+        return wheelchair_ai.get_top_n_reddit(n)
 
 # add resources to api
 api.add_resource(Hello, '/')
 api.add_resource(QuickMaths, '/math')
-api.add_resource(curby_prompt, '/curby_prompt')
+api.add_resource(curbie_prompt, '/curbie_prompt')
+api.add_resource(top_reddit_posts, '/top_reddit_posts')
 
 # run flask app
 if __name__ == '__main__':
